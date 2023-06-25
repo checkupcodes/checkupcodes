@@ -1,0 +1,47 @@
+/* =============================
+        2.18 - Solution Style
+================================ */
+.solution{
+    &-single{
+        display: flex;
+        align-items: flex-start;
+    }
+    &-icon{
+        height: 98px;
+        max-width: 98px;
+        width: 100%;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 30px;
+        background-color: $grey-400;
+        @media #{$desktop-device, $large-mobile} {
+            height: 80px;
+            width: 80px;
+            margin-right: 15px;
+        }
+    }
+    &-content{
+        width: calc(100% - 98px);
+        margin-top: 10px;
+
+        & .title {
+            font-family: $jost;
+            font-size: 24px;
+            color: $dark;
+            font-weight: 500;
+            margin-bottom: 25px;
+            @media #{$desktop-device, $tablet-device, $large-mobile} {
+                margin-bottom: 15px;
+            }
+        }
+        & .text {
+            font-family: $roboto;
+            font-size: 18px;
+            color: $grey-100;
+            line-height: 1.666;
+            margin-bottom: 0;
+        }
+    }
+}

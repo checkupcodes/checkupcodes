@@ -1,0 +1,71 @@
+// Font Family
+$jost: 'Jost', sans-serif;
+$roboto: 'Roboto', sans-serif;
+
+// Responsive Variables
+$extraBig-device: "only screen and (min-width: 1550px)";
+$laptop-device: "only screen and (min-width: 1200px) and (max-width: 1549px)";
+$desktop-device: "only screen and (min-width: 992px) and (max-width: 1199px)";
+$tablet-device: "only screen and (min-width: 768px) and (max-width: 991px)";
+$large-mobile: "only screen and (max-width: 767px)";
+$small-mobile: "only screen and (max-width: 575px)";
+$extra-small-mobile: "only screen and (max-width: 479px)";
+
+//===============================
+// Bootstrap Variables Overright
+//===============================
+
+// Color
+$primary: #7153d9;
+$secondary: #4526b1;
+$white: #ffffff;
+$dark: #1c1c1c;
+$grey:  #8d8e99;
+$grey-100:  #54545f;
+$grey-200:  #a3a1a9;
+$grey-300: #a3a1a9;
+$grey-400: #f2f5fb;
+$grey-500: #e9edf4;
+
+// theme colors map
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "white": $white,
+  "dark": $dark,
+  "grey": $grey,
+  "grey-200": $grey-200
+);
+
+// Grid breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+// Grid containers
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px,
+  xxl: 1320px,
+);
+//
+$grid-gutter-width: 30px;
+
+// Transition
+$transition-base: all 0.5s ease 0s;
+
+// Typography
+$font-family-base: $jost;
+$font-size-base: 1rem;
+$line-height-base: 1.75;
+//
+$headings-font-family: $jost;
+$headings-font-weight: 600;
+$headings-line-height: 1.2;

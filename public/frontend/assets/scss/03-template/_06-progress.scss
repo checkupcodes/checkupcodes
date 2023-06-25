@@ -1,0 +1,65 @@
+/* =============================
+    2.6 - Progress Style
+================================ */
+.progress-section{
+    background-color: $grey-400;
+    overflow: hidden;
+    & .section-head{
+        margin-right: 100px;            
+        @media #{$desktop-device} {
+            margin-right: 40px;
+        }
+        @media #{$large-mobile} {
+            margin-right: 40px;
+        }
+        @media #{$extra-small-mobile} {
+            margin-right: 0px;
+        }
+
+        & .text-two{
+            @media #{$tablet-device} {
+                margin-top: 10px;
+            }
+        }
+    }
+    & .progress-title{
+        font-size: 21px;
+        font-family: $jost;
+        color: $dark;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    & .progress{
+        position: relative;
+        width: 80%;
+        overflow: visible;
+        margin-bottom: 45px;
+        background-color: #e1d9fe;
+        height: 13px;
+        border-radius: 10px;
+        @media #{$extra-small-mobile} {
+            width: 78%;
+        }
+        &:last-child{
+            margin-bottom: 0px;
+        }
+        &-bar{
+            overflow: visible;
+            height: 13px;
+            background-color: $primary;
+            border-radius: 10px;
+        }
+        &-number{
+            position: absolute;
+            right: -70px;
+            color: $primary;
+            font-size: 21px;
+            font-weight: 500;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    & .progress-area{
+        overflow: hidden;
+    }
+}

@@ -1,0 +1,71 @@
+/* =============================
+        2.12 - Brand Style
+================================ */
+.brand-style{
+    .brand-before {
+        display: block;
+        transition: all 0.4s;
+      }
+      .brand-after {
+        top: 150%;
+        position: absolute;
+        display: block;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        transition: all 0.4s;
+      }
+      .swiper-slide {
+        &:hover {
+          .brand-before {
+            transform: translateY(-100%);
+          }
+    
+          .brand-after {
+            top: 0%;
+          }
+        }
+    }
+}
+.brand-style-two{
+  background-color: #f2f5fb;
+  border-radius: 10px;
+  padding: 110px;
+  position: relative;
+  @media #{$desktop-device}{
+    padding: 80px;
+  }
+  @media #{$tablet-device} {
+    padding: 60px;
+  }
+  @media #{$large-mobile} {
+    padding: 60px;
+  }
+  @media #{$extra-small-mobile} {
+    padding: 40px 30px;
+  }
+
+  & .shape-one{
+    position: absolute;
+    bottom: -105px;
+    right: -105px;
+    z-index: -1;
+    @media #{$laptop-device}{
+      right: -35px;
+    }
+    @media #{$desktop-device}{
+      right: -25px;
+    }
+    @media #{$tablet-device, $large-mobile}{
+      right: -30px;
+    }
+    @media #{$small-mobile}{
+      right: 0px;
+      bottom: -40px;
+      width: 35%;
+    }
+  }
+}
+.brand-three{
+  margin-top: 90px;
+}

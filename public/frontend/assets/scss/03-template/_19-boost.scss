@@ -1,0 +1,208 @@
+/* =============================
+        2.19 - Solution Style
+================================ */
+.boost {
+        &-content {
+
+                & .text,
+                & .text-two {
+                        max-width: 100%;
+                }
+                @media #{$tablet-device} {
+                        margin-top: 40px;
+                }
+                @media #{$large-mobile} {
+                        margin-top: 40px;
+                }
+        }
+        &-feature{
+                margin: 40px 0 30px;
+                &-single{
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                }
+                &-img{
+                        display: flex;
+                        align-items: center;
+                        min-height: 60px;
+                }
+                &-title{
+                        font-family: $jost;
+                        font-size: 21px;
+                        font-weight: 500;
+                        color: $dark;
+                        margin-top: 30px;
+                        @media #{$desktop-device} {
+                                font-size: 18px;
+                        }
+                        @media #{$large-mobile} {
+                                font-size: 18px;
+                        }
+                        @media #{$extra-small-mobile} {
+                                font-size: 16px;
+                        }
+                }
+        }
+        &-image {
+                position: relative;
+                margin-right: 110px;
+                min-height: 650px;
+                @media only screen and (min-width: 1400px) and (max-width: 1549px){
+                        min-height: 700px;
+                }
+                @media only screen and (min-width: 1200px) and (max-width: 1399px){
+                        margin-right: 0px;
+                }
+                @media #{$desktop-device} {
+                        min-height: 550px;
+                        margin-right: 0px;
+                }
+                @media #{$tablet-device} {
+                        min-height: 700px;
+                        margin-right: 0px;
+                }
+                @media #{$large-mobile} {
+                        min-height: 610px;
+                        margin-right: 0px;
+                }
+                @media #{$small-mobile} {
+                        min-height: 490px;
+                }
+                @media #{$extra-small-mobile} {
+                        min-height: 360px;
+                }
+                &-badge{
+                        border-color: #4526b1;
+                        background: rgb(69,38,177);
+                        background: linear-gradient(135deg, rgba(69,38,177,1) 0%, rgba(84,53,190,1) 45%, rgba(113,83,217,1) 66%);
+                        border: 0px;
+                        border-radius: 10px;
+                        height: 125px;
+                        width: 125px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: absolute;
+                        left: -18%;
+                        top: 23%;
+                        z-index: 4;
+                        @media only screen and (min-width: 1400px) and (max-width: 1549px){
+                                left: -9%;
+                                top: 31%;
+                        }
+                        @media only screen and (min-width: 1200px) and (max-width: 1399px){
+                                left: -4%;
+                                top: 24%;
+                        } 
+                        @media #{$desktop-device} {
+                                left: 4%;
+                                top: 22%;
+                                height: 100px;
+                                width: 100px;
+                        }
+                        @media #{$tablet-device} {
+                                left: 15%;
+                                top: 30%;
+                        }
+                        @media #{$large-mobile} {
+                                left: 5%;
+                                top: 29%;
+                                height: 90px;
+                                width: 90px;
+                                & img {
+                                        width: 55%;
+                                }
+                        }
+                        @media #{$extra-small-mobile} {
+                                left: 0%;
+                                top: 25%;
+                                height: 70px;
+                                width: 70px;
+                                & img {
+                                        width: 55%;
+                                }
+                        }
+                }
+                &-one{
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        z-index: 2;
+                        @media #{$desktop-device} {
+                                width: 70%;
+                        }
+                        @media #{$large-mobile} {
+                                width: 70%;
+                        }
+                }
+                &-two{
+                        position: absolute;
+                        left: -33%;
+                        bottom: -4%;
+                        z-index: 3;
+                        @media only screen and (min-width: 992px) and (max-width: 1650px){
+                                left: -24%;
+                        }
+                        @media only screen and (min-width: 1400px) and (max-width: 1549px){
+                                left: -9%;
+                                bottom: 0%;
+                        }
+                        @media only screen and (min-width: 1200px) and (max-width: 1399px){
+                                left: -4%;
+                                bottom: 0%;
+                        }
+                        @media #{$desktop-device} {
+                                left: -6%;
+                                width: 80%;
+                                bottom: 0%;
+                        }
+                        @media #{$tablet-device} {
+                                left: 0%;
+                                bottom: 0%;
+                        }
+                        @media #{$large-mobile} {
+                                left: -5%;
+                                bottom: 0%;
+                                width: 70%;
+                        }
+                        @media #{$small-mobile} {
+                                left: 0%;
+                                width: 60%;
+                        }
+                }
+                &-shape {
+                        position: absolute;
+                        left: 29%;
+                        bottom: 4%;
+                        z-index: 1;
+                        @media only screen and (min-width: 1400px) and (max-width: 1549px){
+                                bottom: 11%;
+                        }
+                        @media only screen and (min-width: 1400px) and (max-width: 1549px){
+                                left: 48%;
+                        }
+                        @media only screen and (min-width: 1200px) and (max-width: 1399px){
+                                left: 51%;
+                                bottom: 7%;
+                        }
+                        @media #{$desktop-device} {
+                                left: 48%;
+                                bottom: 5%;
+                        }
+                        @media #{$tablet-device} {
+                                left: 50%;
+                                bottom: 7%;
+                        }
+                        @media #{$large-mobile} {
+                                left: 43%;
+                                bottom: 13%;
+                        }
+                        @media #{$small-mobile} {
+                                left: 48%;
+                                bottom: 4%;
+                                width: 40%;
+                        }
+                }
+        }
+}
